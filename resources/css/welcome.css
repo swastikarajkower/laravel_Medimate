@@ -1,0 +1,58 @@
+/* welcome.css */
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the header and navigation */
+header {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the header */
+}
+
+nav {
+    display: flex; /* Flex layout for navigation */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+nav a {
+    color: white; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 10px; /* Add some spacing between links */
+}
+
+nav button {
+    background-color: transparent; /* Transparent background for button */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    outline: none; /* Remove outline on focus */
+}
+
+/* Styles for the dropdown menu */
+#navbarTogglerDemo02 {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute; /* Position the dropdown absolutely */
+    top: 100%; /* Position the dropdown below the navbar */
+    left: 0; /* Position the dropdown at the left edge of the navbar */
+    background-color: #333; /* Dark background color for dropdown */
+    padding: 10px; /* Padding inside the dropdown */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+}
+
+nav ul li {
+    margin-bottom: 5px; /* Add some spacing between list items */
+}
+
+/* Show the dropdown menu when the button is clicked */
+nav button:hover + #navbarTogglerDemo02,
+#navbarTogglerDemo02:hover {
+    display: block; /* Show the dropdown menu on hover */
+}
